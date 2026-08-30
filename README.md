@@ -119,6 +119,75 @@ prioritised leads.
 
 ![Threshold Analysis](Visualization/Threshold%20Analysis.jpg)
 
+## Business Insights
+
+The analysis indicates that lead conversion is not evenly distributed across
+lead acquisition channels and engagement behaviours.
+
+### Lead Origin
+
+Lead origin shows meaningful differences in conversion behaviour. In particular,
+leads originating through the lead add form show a substantially higher
+conversion proportion than the larger-volume acquisition channels.
+
+![Lead Origin vs Conversion](Visualization/Lead%20Origin%20Vs%20Conversion.jpg)
+
+### Lead Source
+
+Conversion behaviour also varies across lead sources. While high-volume sources
+generate a large number of leads, some lower-volume sources show comparatively
+stronger conversion performance.
+
+This highlights an important distinction between **lead volume and lead quality**:
+the channel generating the most leads is not necessarily the channel generating
+the highest proportion of conversions.
+
+![Lead Source vs Conversion](Visualization/Lead%20Source%20Vs%20Conversion.jpg)
+
+### Lead Prioritisation
+
+The logistic regression model converts the available lead attributes into a
+predicted probability of conversion. These probabilities can be used to rank
+leads and help sales teams focus attention on leads with higher predicted
+conversion likelihood.
+
+## Key Results
+
+- **Model:** Logistic Regression
+- **Evaluation metric:** ROC-AUC
+- **ROC-AUC:** **0.86**
+- **Primary application:** Probability-based lead prioritisation
+- **Key analytical areas:** Lead source, lead origin and behavioural engagement
+- **Decision mechanism:** Conversion probability and classification threshold
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+## Repository Structure
+
+```text
+Lead-Scoring-Case-Study/
+│
+├── lead-scoring-case-study.ipynb
+├── README.md
+├── requirements.txt
+│
+└── Visualization/
+    ├── Heatmap.jpg
+    ├── Lead Origin Vs Conversion.jpg
+    ├── Lead Source Vs Conversion.jpg
+    ├── Outlier Detection.jpg
+    ├── Pair Plots.jpg
+    ├── ROC Curve.jpg
+    └── Threshold Analysis.jpg
+
 ## Disclaimer
 
 This project is presented as an analytical case study demonstrating the application of predictive modelling techniques to a lead-scoring problem.
