@@ -170,6 +170,34 @@ conversion likelihood.
 - Scikit-learn
 - Jupyter Notebook
 
+## How to Run
+
+Clone the repository and install the required Python packages:
+
+pip install -r requirements.txt
+
+Open the Jupyter Notebook:
+
+jupyter notebook
+
+Then open lead-scoring-case-study.ipynb and execute the cells sequentially.
+
+Project Outcome
+
+The project demonstrates an end-to-end approach to converting historical lead
+data into a predictive lead-scoring framework.
+
+Rather than treating all leads equally, the model provides a probability-based
+basis for prioritising leads and supporting more targeted sales effort.
+
+
+### Commit it as
+
+**Commit message:**
+
+```text
+Complete README with business insights and project details
+
 ## Repository Structure
 
 ```text
@@ -187,6 +215,8 @@ Lead-Scoring-Case-Study/
     ├── Pair Plots.jpg
     ├── ROC Curve.jpg
     └── Threshold Analysis.jpg
+
+
 
 ## Disclaimer
 
